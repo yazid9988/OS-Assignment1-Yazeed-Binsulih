@@ -168,16 +168,16 @@
 
 ---
 
-### Entry 4 - [Date and Time]
-**What I did**:
+### Entry 4 - [07-10-2026]
+**What I did**: Implemented Feature 2 (Count and display total context switches).
 
-**Details**:
+**Details**: Introduced a static counter variable in the scheduler to track every time the processor switches execution between different processes.
 
-**Challenges**:
+**Challenges**: Ensuring the counter only increments during actual context switches and not when a process continues its own execution slice.
 
-**Solution**:
+**Solution**: Placed the counter increment logic specifically within the process yielding and scheduling rotation methods.
 
-**Time spent**:
+**Time spent**: 1 hour 
 
 ---
 
