@@ -181,16 +181,16 @@
 
 ---
 
-### Entry 5 - [Date and Time]
-**What I did**:
+### Entry 5 - [8-10-2026]
+**What I did**: Completed Feature 3 implementation.
 
-**Details**:
+**Details**: Finalised the waiting time and turnaround time tracking mechanisms for all processes and structured the final summary output table.
 
-**Challenges**:
+**Challenges**: Formatting the floating-point averages to display exactly two decimal places in the terminal.
 
-**Solution**:
+**Solution**: Used the ⁠String.format()⁠ method with ⁠%.2fms⁠ padding to standardize the output.
 
-**Time spent**:
+**Time spent**: 1 hour 30 minutes 
 
 ---
 
