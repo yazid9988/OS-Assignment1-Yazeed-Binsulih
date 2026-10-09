@@ -129,17 +129,17 @@
 
 ## Your Development Log
 
-### Entry 1 - [Date and Time]
-**What I did**:
+### Entry 1 - [2-10-2026]
+**What I did**: Added my student ID to the code.
 
-**Details**:
+**Details**: Inserted my university ID into the ⁠main⁠ method and set up the random number generation logic as required.
 
-**Challenges**:
+**Challenges**: Needed to ensure the ID was correctly formatted within the output strings to match the assignment specifications.
 
-**Solution**:
+**Solution**: Verified the syntax and tested the initial output to ensure the ID printed cleanly to the console.
 
-**Time spent**:
 
+**Time spent**: 35 minutes 
 ---
 
 ### Entry 2 - [Date and Time]
