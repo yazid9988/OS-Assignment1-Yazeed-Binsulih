@@ -142,16 +142,16 @@
 **Time spent**: 35 minutes 
 ---
 
-### Entry 2 - [Date and Time]
-**What I did**:
+### Entry 2 - [6-10-2026]
+**What I did**: Set up the development environment.
 
-**Details**:
+**Details**: Installed VS Code and configured the Java ecosystem, ensuring the compiler and runtime were properly linked.
 
-**Challenges**:
+**Challenges**: Encountered path configuration issues where the terminal could not locate the Java Development Kit tools.
 
-**Solution**:
+**Solution**: Downloaded JDK 17, updated the system environment PATH variables, and restarted the IDE.
 
-**Time spent**:
+**Time spent**: 45 minutes 
 
 ---
 
