@@ -155,16 +155,16 @@
 
 ---
 
-### Entry 3 - [Date and Time]
-**What I did**:
+### Entry 3 - [7-10-2026]
+**What I did**: Implemented Feature 1 (Add Priority).
 
-**Details**:
+**Details**: Modified the ⁠Process⁠ class to include a priority attribute and updated the insertion logic to place processes in the Ready Queue based on this value.
 
-**Challenges**:
+**Challenges**: Sorting the queue dynamically while maintaining the chronological order for processes with identical priority levels.
 
-**Solution**:
+**Solution**: Utilized a custom comparator that checks priority first, falling back to arrival sequence for ties.
 
-**Time spent**:
+**Time spent**: 50 minutes 
 
 ---
 
