@@ -293,7 +293,7 @@
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+[A process is an independent execution environment with its own isolated memory space, whereas threads within the same process share the same memory heap. In our code, the class named ⁠Process⁠ represents a simulated process model, but it is actually executed using a real Java ⁠Thread⁠ object. We used threads instead of separate processes because thread creation has much lower overhead and allows faster communication through shared memory. Specifically, this is implemented in ⁠SchedulerSimulation.java⁠ where we invoke ⁠new Thread(process)⁠ inside the ⁠addProcessToQueue()⁠ method.]
 
 ## Question 2: Ready Queue Behavior
 
@@ -305,15 +305,17 @@
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+[In Round-Robin scheduling, when a process does not finish within its time quantum, the CPU scheduler interrupts it, calculates its remaining time, and re-queues it back into the ready queue. For example, in my program output where the time quantum is 3000ms, process P1 had a burst time of 6767ms, which exceeded the quantum limit. After completing its first 3000ms, it was preempted and added back to the ready queue with a remaining time of 3767ms. This re-queueing mechanism ensures fairness by allowing other processes to execute before P1 gets another turn.]
 
 Example from my output:
 ```
-[Paste a relevant snippet from your program output here showing a process being re-queued]
+[P1 completed quantum 3000ms | Remaining time: 3767ms
++ P1(priority: 9) added to ready queue | Burst time: 6767ms
+]
 ```
 
 **Explanation of example:**
-[Explain what is happening in the output snippet you pasted.]
+[Because the burst time of process P1 (6767ms) was greater than the 3000ms time quantum, it could not finish in a single run. Therefore, the scheduler interrupted P1 after its quantum expired, performed a context switch, and re-queued it into the ready queue to finish its remaining execution time in the next cycle.]
 
 ## Question 3: Thread Lifecycle
 
@@ -323,15 +325,15 @@ Example from my output:
 
 **Your Answer:** *(3-5 sentences overall; one short explanation per state)*
 
-1. **New**: [When is P1 in the New state?]
+1. **New**: [P1 enters the New state right after the ⁠Process⁠ object is instantiated using its constructor before its thread is launched.]
 
-2. **Runnable**: [When does P1 become Runnable?]
+2. **Runnable**: [P1 becomes Runnable when the scheduler invokes ⁠thread.start()⁠ inside ⁠addProcessToQueue()⁠, making it ready for CPU execution.]
 
-3. **Running**: [When is P1 Running?]
+3. **Running**: [P1 is in the Running state when the CPU scheduler allocates a time quantum to it, executing its task inside the ⁠run()⁠ method.]
 
-4. **Waiting**: [When and why would a thread be Waiting?]
+4. **Waiting**: [P1's thread enters a Waiting/Sleeping state when it calls ⁠Thread.sleep()⁠ to simulate the time quantum or context switching delay.]
 
-5. **Terminated**: [When is P1 Terminated?]
+5. **Terminated**: [P1 enters the Terminated state after its remaining burst time reaches zero and its ⁠run()⁠ method finishes execution completely.]
 
 ## Question 4: Real-World Applications
 
@@ -344,29 +346,29 @@ Example from my output:
 ### Example 1 (operating-system level): [Name of scenario]
 
 **Description**:
-[Describe the real-world scenario.]
+[Operating systems use Round-Robin scheduling to manage multiple running applications and system tasks on a single CPU core.]
 
 **Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
+[It guarantees absolute fairness and responsiveness by giving every application an equal time slice (quantum) so that no single task blocks the entire system. In this scenario, running applications act as the "processes", the OS preemption timer acts as the "time quantum", and the CPU core register saving acts as the "context switch".]
 
 ### Example 2: [Name of application/scenario]
 
 **Description**:
-[Describe the real-world scenario or application.]
+[Modern web browsers use multithreading and scheduling algorithms to manage multiple open tabs simultaneously.]
 
 **Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
+[It ensures predictability and responsiveness so that a heavy script running in one tab does not freeze the user interface of other tabs. Here, each browser tab acts as a "process/thread", the responsive event loop slice acts as the "time quantum", and switching between active tab views acts as the "context switch".]
 
 ## Summary
 
 **Key concepts I understood through these questions:**
-1.
-2.
-3.
+1. The fundamental architectural differences in memory sharing and creation overhead between threads and processes.
+2. How the Round-Robin queue mechanism handles preemption and re-queuing to maintain fairness.
+3. The precise state transitions a thread goes through during its lifecycle from creation to termination.
 
 **Concepts I need to study more:**
-1.
-2.
+1. Advanced thread synchronization and mutual exclusion locks.
+2. Complex multi-core CPU scheduling algorithms.
 
 ---
 
