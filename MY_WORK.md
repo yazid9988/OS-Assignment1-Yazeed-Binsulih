@@ -237,7 +237,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[I learned how to use multithreading in Java using the ⁠Runnable⁠ interface. I used ⁠Thread.start()⁠ to run processes at the same time. I also used ⁠Thread.sleep()⁠ to simulate CPU execution time. Using ⁠Thread.join()⁠ helped me wait for threads to finish their work properly. I was surprised by how fast threads process tasks concurrently. Overall, this assignment made the OS concepts very clear to me.]
 
 ## Question 2: What was the most challenging part of this assignment?
 
@@ -245,7 +245,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[The most challenging part was tracking the waiting time and turnaround time in Feature 3. It was hard to update the variables correctly when a process was re-queued. I struggled to separate the actual waiting time from the execution time. Adding priority levels from 1 to 10 also made the logic more complex. I had to review my calculations multiple times to make sure they were right. Testing the scheduler step-by-step helped me solve this issue.]
 
 ## Question 3: How did you overcome the challenges you faced?
 
@@ -253,7 +253,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[I overcame my challenges by testing my code step-by-step. I added ⁠System.out.println⁠ statements to print and track process states in the console. Reading the ⁠README.md⁠ file again helped me understand the exact requirements. I tested my changes after writing every small part of the code. Checking the console output regularly showed me where the logic failed. This trial-and-error approach helped me fix all the bugs.]
 
 ## Question 4: How can you apply multithreading concepts in real-world applications?
 
@@ -261,11 +261,11 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[Multithreading is used in many everyday applications like web browsers and music players. In a music player, one thread plays audio while another thread updates the user interface. Web browsers use separate threads for each tab so one tab does not freeze the rest. Mobile apps use background threads to download data without stopping the screen. The Round-Robin scheduling we built works just like real operating system schedulers. Understanding these concepts helps in writing fast and responsive software.]
 
 ### Optional: What would you like to learn more about?
 
-[Any topics related to threading or operating systems that you're curious about?]
+[Confident. I have a solid understanding of how tasks are distributed among threads and how this effectively accelerates the overall process execution. However, I recognize the need for further practice to master complex synchronization scenarios.]
 
 ### Optional: How confident do you feel about multithreading concepts now?
 
@@ -273,7 +273,7 @@
 
 ### Optional: Feedback on the assignment
 
-[Any comments? Was it helpful? Too easy or hard? Suggestions?]
+[Feedback on the assignment: The assignment was highly beneficial as it bridged the gap between theoretical concepts of process management and quantum time, and their practical implementation in code. It was a genuinely enjoyable and rewarding experience.]
 
 ---
 
